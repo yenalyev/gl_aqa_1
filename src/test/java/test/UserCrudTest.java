@@ -56,7 +56,7 @@ public class UserCrudTest {
         logger.info("New user name - " + forUpdate.getName());
         User afterUpdate = UserHelper.putUser(forUpdate);
         logger.info("User - " + afterUpdate.toString() + " was updated");
-        Assert.assertEquals(afterUpdate.getCreatedAt(), forUpdate.getUpdateAt());
+        Assert.assertEquals(afterUpdate.getName(), forUpdate.getName());
         logger.info("Check user update user test passed");
     }
 
